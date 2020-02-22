@@ -28,8 +28,14 @@ function testMultiply() { //eslint-disable-line
 function testSumAndMultiply() { //eslint-disable-line
   if (sumAndMultiply(4, 7, 5)[0] === 16 && sumAndMultiply(4, 7, 5)[1] === 140 && sumAndMultiply(4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
     console.log('%c TEST FOR sumAndMultiply() PASSES', 'color: green');
+    console.log(`Wellcome ${username}`);
+    console.log(`The sum of ${a} and ${b} and ${c} is ${sum(a,b,c)}.`)
+    console.log(`The product of ${a} and ${b} and ${c} is ${multiply(a,b,c)}.`)
+    alert('dont forget to check the console')
   } else {
     console.log('%c TEST FOR sumAndMultiply() FAILS', 'color: red');
+    console.log(sumAndMultiply(a, b, c)[0]) 
+    console.log(sumAndMultiply(a, b, c)[1])
   }
 }
 
