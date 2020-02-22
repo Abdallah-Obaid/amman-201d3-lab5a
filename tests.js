@@ -3,10 +3,14 @@
 // You should not modify anything in this file, but feel free to look through it!
 
 function testSum() { //eslint-disable-line
-  if (sum(4,7)[0] === 11 && sum(4,7)[1] === 'The sum of 4 and 7 is 11.') {
+  if (sum(4,7)[0] === 11 && sum(4,7)[1] === 'The sum of ${a} and ${b} is ${a+b}.') {
     console.log('%c TEST FOR sum() PASSES', 'color: green');
+    console.log(`Wellcome ${username}`);
+    console.log(`The sum of ${a} and ${b} is ${a+b}.`)
+    alert('dont forget to check the console')
   } else {
     console.log('%c TEST FOR sum() FAILS', 'color: red');
+    console.log('You can die now')
   }
 }
 
