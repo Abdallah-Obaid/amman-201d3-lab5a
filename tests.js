@@ -40,10 +40,15 @@ function testSumAndMultiply() { //eslint-disable-line
 }
 
 function testSumArray() { //eslint-disable-line
-  if (sumArray(testArray)[0] === 9 && sumArray(testArray)[1] === '2,3,4 was passed in as an array of numbers, and 9 is their sum.') {
+  if (sumArray(testArray=[2,3,4])[0] === 9 && sumArray(testArray)[1] === '2,3,4 was passed in as an array of numbers, and 9 is their sum.') {
     console.log('%c TEST FOR sumArray() PASSES', 'color: green');
+    console.log(`Wellcome ${username}`);
+    console.log(`The sum of ${a} and ${b} and ${c} is ${sum(testArray=[a,b,c])}.`)
+    alert('dont forget to check the console')
   } else {
     console.log('%c TEST FOR sumArray() FAILS', 'color: red');
+    console.log(sumArray(testArray)[0])
+    sum(a,b,c)
   }
 }
 
