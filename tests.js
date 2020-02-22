@@ -52,9 +52,13 @@ function testSumArray() { //eslint-disable-line
   }
 }
 
+
 function testMultiplyArray() { //eslint-disable-line
-  if (multiplyArray(testArray)[0] === 24 && multiplyArray(testArray)[1] === 'The numbers 2,3,4 have a product of 24.') {
+  if (multiplyArray(testArray=[2,3,4])[0] === 24 && multiplyArray(testArray)[1] === 'The numbers 2,3,4 have a product of 24.') {
     console.log('%c TEST FOR multiplyArray() PASSES', 'color: green');
+    console.log(`Wellcome ${username}`);
+    console.log(`The product of ${a} and ${b} and ${c} is ${multiply(testArray=[a,b,c])}.`)
+    alert('dont forget to check the console')
   } else {
     console.log('%c TEST FOR multiplyArray() FAILS', 'color: red');
   }
