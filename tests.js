@@ -15,8 +15,11 @@ function testSum() { //eslint-disable-line
 }
 
 function testMultiply() { //eslint-disable-line
-  if (multiply(5,9)[0] === 45 && multiply(5,9)[1] === 'The product of 5 and 9 is 45.') {
+  if (multiply(5,9)[0] === 45 && multiply(5,9)[1] === 'The product of ${a} and ${b} is ${a*b}.') {
     console.log('%c TEST FOR multiply() PASSES', 'color: green');
+    console.log(`Wellcome ${username}`);
+    console.log(`The product of ${a} and ${b} is ${a*b}.`)
+    alert('dont forget to check the console')
   } else {
     console.log('%c TEST FOR multiply() FAILS', 'color: red');
   }
