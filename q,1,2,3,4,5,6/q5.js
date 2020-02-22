@@ -1,8 +1,8 @@
 'use strict';
 var username = prompt(' وش إسمك ؟')
-var a = Number(prompt('enter the first value to be sum'))
-var b = Number(prompt('enter the secound value to be sum'))
-var c = Number(prompt('enter the third value to be sum'))
+var a = Number(prompt('enter the first value to be multiplied'))
+var b = Number(prompt('enter the secound value to be multiplied'))
+var c = Number(prompt('enter the third value to be multiplied'))
 var testArray = [a,b,c]
 
 function multiply(testArray) { //eslint-disable-line
