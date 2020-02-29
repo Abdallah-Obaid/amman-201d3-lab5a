@@ -1,9 +1,8 @@
 'use strict';
-var username = prompt(' وش إسمك ؟')
 var a = Number(prompt('enter the first value to be multiplied'))
 var b = Number(prompt('enter the secound value to be multiplied'))
 var c = Number(prompt('enter the third value to be multiplied'))
-var testArray = [a,b,c]
+var testArray = [2,3,4]
 
 function multiply(testArray) { //eslint-disable-line
 var multi= testArray[0]*testArray[1]*testArray[2]
@@ -20,12 +19,17 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
-return[multiply(testArray),'The numbers 2,3,4 have a product of 24.']
-}
+function multiplyArray(testArray) { //eslint-disable-line
+    return[multiply(testArray),`The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${multiply(testArray)}.`]
+}    
 // Here is the test for multiplyArray(); uncomment it to run it
-testMultiplyArray(testArray);
-
+testMultiplyArray();
+console.log(multiplyArray(testArray))
+var testArray1=[a,b,c]
+function multiplyArray1(testArray1) { //eslint-disable-line
+    return[multiply(testArray1),`The numbers ${testArray1[0]},${testArray1[1]},${testArray1[2]} have a product of ${multiply(testArray1)}.`]
+} 
+console.log(multiplyArray1(testArray1))
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
